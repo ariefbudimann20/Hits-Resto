@@ -1,0 +1,328 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+
+.menu_fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1024 !important;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, .05);
+}
+
+.navbar-toggler {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-collapse {
+    position: relative;
+    z-index: 1;
+    top: 0;
+    background-color: #fff;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.navbar-brand {
+    color: #000 !important;
+}
+
+/* Jumbotron */
+
+.jumbotron{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    height: 658px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron::after {
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+}
+
+.jumbotron .display-4 {
+    color: #fff;
+    text-align: center;
+    font-weight: 450;
+    font-size: 47px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    margin-top: 180px;
+}
+
+/* About */
+
+.about {
+    padding-top: 100px;
+}
+
+.img-resto {
+    border-radius: 20px;
+}
+
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Content */
+
+.content {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+
+.menu {
+    padding-top: 100px;
+}
+
+.img-menu {
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.title-menu {
+    text-align: center;
+    font-size: 15px;
+}
+  
+/* Search */
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.search-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.searchTerm {
+    width: 100%;
+    border: 3px solid #000;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+  
+.searchTerm:focus{
+    color: #000;
+}
+  
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #000;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Service */
+
+.service {
+    padding-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bg-service {
+    width: 150px;
+    background-color: #dddddd;
+    padding: 40px;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.service h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.title-service {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.desc-service {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Contact */
+
+.contact {
+    padding-top: 100px;
+    background-color: black;
+}
+
+.contact h4 {
+    color: #fafafa;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 14px;
+    color: #fafafa;
+}
+
+/* Untility */
+
+.tombol {
+    border-radius: 20px;
+    width: 150px;
+}
+
+
+
+
+/* DESKTOP VERSION */
+
+@media (min-width: 992px) {
+
+    /* Navbar */
+
+    .navbar-brand, .nav-link {
+        color: #000 !important;
+        /* color: #fff !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7); */
+    }
+
+    .navbar-collapse {
+        top: 0 !important;
+        background-color: unset;
+    }
+
+    .nav-link {
+        margin-right: 5px;
+    }
+
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #000;
+        width: 50%;
+        margin: left;
+        margin-bottom: -3px;
+    }
+
+    /* Jumbotron */
+
+    .jumbotron .display-4 {
+        font-size: 55px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+        margin-top: 230px;
+    }
+
+    /* About */
+
+    .img-resto {
+        float: right;
+        width: 500px;
+        border-radius: 20px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .content {
+        padding: 10px;
+        margin-bottom: 60px;
+    }
+
+    /* Search */
+
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+
+    .search-title {
+        font-family: 'Pacifico', cursive;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+      
+    .searchTerm {
+        width: 100%;
+        border: 3px solid #000;
+        border-right: none;
+        padding: 5px;
+        height: 36px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+    }
+      
+    .searchTerm:focus{
+        color: #000;
+    }
+      
+    .searchButton {
+        width: 40px;
+        height: 36px;
+        border: 1px solid #000;
+        background: #000;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    /* Untility */
+
+    .tombol {
+        border-radius: 20px;
+        font-size: 20px;
+        width: 200px;
+    }
+}

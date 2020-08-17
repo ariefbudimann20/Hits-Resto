@@ -10,7 +10,7 @@ class AboutApp extends HTMLElement {
             <div class="container">
                 <div class="row flex-row-reverse">
                     <div class="col-md-6 mt-5 mb-5">
-                        <img class="img-fluid img-resto" src="src/img/resto.jpg" alt="img-resto">
+                        <img class="img-fluid img-resto" src="img/resto.jpg" alt="img-resto">
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <h1 class="title">Hit's Resto</h1>

@@ -14,28 +14,28 @@ class ServiceApp extends HTMLElement {
                     <div class="row">
                         <div class="col-md-3">
                             <div class="bg-service">
-                                <img src="src/img/wifi.png" class="img-fluid" alt="img-chef">
+                                <img src="img/wifi.png" class="img-fluid" alt="img-chef">
                             </div>
                             <h5 class="title-service">Wifi</h5>
                             <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="bg-service">
-                                <img src="src/img/recipe.png" class="img-fluid" alt="img-chef">
+                                <img src="img/recipe.png" class="img-fluid" alt="img-chef">
                             </div>
                             <h5 class="title-service">Lunch</h5>
                             <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="bg-service">
-                                <img src="src/img/pizza.png" class="img-fluid" alt="img-chef">
+                                <img src="img/pizza.png" class="img-fluid" alt="img-chef">
                             </div>
                             <h5 class="title-service">Dinner</h5>
                             <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
                         </div>
                         <div class="col-md-3">
                             <div class="bg-service">
-                                <img src="src/img/food.png" class="img-fluid" alt="img-chef">
+                                <img src="img/food.png" class="img-fluid" alt="img-chef">
                             </div>
                             <h5 class="title-service">Custom</h5>
                             <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>

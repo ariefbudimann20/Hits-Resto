@@ -1,4 +1,4 @@
-function main() {
+function data() {
 
     const baseUrl = "https://hits-resto.infotechno.id/api";
 
@@ -65,4 +65,4 @@ function main() {
     });
 }
 
-export default main;
+export default data;

@@ -7,6 +7,11 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/main.css";
 import "./styles/font.css";
-import main from "./scripts/main";
+import "./scripts/view/home.js";
+import "./scripts/view/about.js";
+import "./scripts/view/menu.js";
+import "./scripts/view/service.js";
+import "./scripts/view/contact.js";
+import data from "./scripts/data/data-api";
 
-main();
+data();

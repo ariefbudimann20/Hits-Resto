@@ -3,139 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Primary Meta Tags -->
     <title>Hit's Resto</title>
+    <meta name="title" content="Hit's Resto">
+    <meta name="description" content="More than 10 menu variants of Baked Bread, Coffee, Fresh Milk, Dessert & Other Menus">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hits-resto.infotechno.id">
+    <meta property="og:title" content="Hit's Resto">
+    <meta property="og:description" content="More than 10 menu variants of Baked Bread, Coffee, Fresh Milk, Dessert & Other Menus">
+    <meta property="og:image" content="https://hits-resto.infotechno.id/images/logo.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hits-resto.infotechno.id">
+    <meta property="twitter:title" content="Hit's Resto">
+    <meta property="twitter:description" content="More than 10 menu variants of Baked Bread, Coffee, Fresh Milk, Dessert & Other Menus">
+    <meta property="twitter:image" content="https://hits-resto.infotechno.id/images/logo.jpg">
     
 </head>
 <body>
-    <!-- Section Home -->
-    <section id="home">
-        <div class="menu_fixed">
-            <div class="container">
-                <!-- Navbar -->
-                <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#">Hit's Resto</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" role="navigation" id="navbarNavAltMarkup">
-                        <div class="navbar-nav ml-auto">
-                            <a class="nav-item nav-link" href="#home"><span class="nav-span">Home</span></a>
-                            <a class="nav-item nav-link" href="#about"><span class="nav-span">About</span></a>
-                            <a class="nav-item nav-link" href="#menu"><span class="nav-span">Menu</span></a>
-                            <a class="nav-item nav-link" href="#service"><span class="nav-span">Service</span></a>
-                            <a class="nav-item nav-link" href="#contact"><span class="nav-span">Contact</span></a>
-                        </div>
-                    </div>
-                </nav>
-                <!-- End Navbar -->
-            </div>
-        </div>
+    <main>
+        <!-- Section Home -->
+        <home-app></home-app>
 
-        <!-- Jumbotron -->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4 mb-5">Beyond The Boundaries Of Taste</h1>
-                <a class="btn btn-primary tombol text-center" href="#menu" role="button">Catalog Menu</a>
-            </div>
-        </div>
-        <!-- End Jumbotron -->
-    </section>
+        <!-- Section About -->
+        <about-app></about-app>
 
-    <!-- Section About -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="row flex-row-reverse">
-                <div class="col-md-6 mt-5 mb-5">
-                    <img class="img-fluid img-resto" src="<%=require('./img/resto.jpg').default%>" alt="img-resto">
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <h1 class="title">Hit's Resto</h1>
-                    <p class="content">Many variations of the menu at our restaurant</p>
-                    <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Section Menu -->
+        <menu-app></menu-app>
 
-    <!-- Section Menu -->
-    <section id="menu" class="menu">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <div class="col-md-4 col-sm-12 mb-5">
-                    <h1 class="search-title">Find Your Favorite Menu</h1>
-                </div>
-            </div>
-            <div >
-                <div id="listMenu" class="row"></div>
-            </div>
-        </div>
-    </section>
+        <!-- Section Service -->
+        <service-app></service-app>
 
-    <!-- Section Service -->
-    <section id="service" class="service">
-        <div class="container">
-            <div class="d-flex justify-content-center">
-                <h1>Our Service</h1>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="bg-service">
-                            <img src="<%=require('./img/wifi.png').default%>" class="img-fluid" alt="img-chef">
-                        </div>
-                        <h5 class="title-service">Wifi</h5>
-                        <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="bg-service">
-                            <img src="<%=require('./img/recipe.png').default%>" class="img-fluid" alt="img-chef">
-                        </div>
-                        <h5 class="title-service">Lunch</h5>
-                        <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="bg-service">
-                            <img src="<%=require('./img/pizza.png').default%>" class="img-fluid" alt="img-chef">
-                        </div>
-                        <h5 class="title-service">Dinner</h5>
-                        <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="bg-service">
-                            <img src="<%=require('./img/food.png').default%>" class="img-fluid" alt="img-chef">
-                        </div>
-                        <h5 class="title-service">Custom</h5>
-                        <p class="desc-service">Lorem Ipsum is simply dummy text of the printing.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- Section Contact -->
+        <contact-app></contact-app>
+    </main>
     
-    <!-- Section Contact -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-5">
-                    <h4>Location Resto</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> 732/21 Second Street, Manchester, King Street, Kingston United Kingdom</p>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class=""> 
-                        <h4>Open Hours</h4>
-                    </div>
-                    <p><i class="fas fa-clock"></i> Monday – Friday <br>
-                    10 AM – 7 PM</p>
-                    <p><i class="fas fa-phone-alt"></i> +66 7883456</p>
-                    <p><i class="fas fa-phone-alt"></i> +66 233459876</p> 
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div style="width: 100%"><iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=350&amp;hl=en&amp;q=732/21%20Second%20Street,%20Manchester,%20King%20Street,%20Kingston%20United%20Kingdom+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
 </html>
